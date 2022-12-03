@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE search SYSTEM "behaviorsearch.dtd">
+<search>
+    <bsearchVersionNumber>1.10</bsearchVersionNumber>
+    <modelInfo>
+        <modelFile>D:\Games\NetLogo\models\Sample Models\Social Science\Economics\Fruit Wars.nlogo</modelFile>
+        <modelSetupCommands>setup</modelSetupCommands>
+        <modelStepCommands>go</modelStepCommands>
+        <modelStopCondition/>
+        <modelStepLimit>500</modelStepLimit>
+        <modelMetricReporter>murder-rate</modelMetricReporter>
+        <modelMeasureIf>ticks &gt; 400</modelMeasureIf>
+    </modelInfo>
+    <fitnessInfo>
+        <fitnessMinimized>true</fitnessMinimized>
+        <fitnessCollecting>MEAN_ACROSS_STEPS</fitnessCollecting>
+        <fitnessSamplingReplications>5</fitnessSamplingReplications>
+        <fitnessCombineReplications>MEAN</fitnessCombineReplications>
+    </fitnessInfo>
+    <searchSpace>
+        <paramSpec>["initial-fruit-bushes" [20 1 40]]</paramSpec>
+        <paramSpec>["initial-foragers" [30 1 100]]</paramSpec>
+        <paramSpec>["bush-growth-chance" [15 1 100]]</paramSpec>
+        <paramSpec>["ticks-to-flee" [0 1 100]]</paramSpec>
+        <paramSpec>["max-age" [150 1 500]]</paramSpec>
+        <paramSpec>["collaboration-bonus" [0.1 "C" 5]]</paramSpec>
+        <paramSpec>["rate-of-mutation" [0 0.1 10]]</paramSpec>
+        <paramSpec>["show-energy?" false]</paramSpec>
+        <paramSpec>["visualization" "None"]</paramSpec>
+    </searchSpace>
+    <searchMethod type="RandomSearch"/>
+    <chromosomeRepresentation type="GrayBinaryChromosome"/>
+    <caching>true</caching>
+    <evaluationLimit>300</evaluationLimit>
+    <bestCheckingNumReplications>0</bestCheckingNumReplications>
+</search>
